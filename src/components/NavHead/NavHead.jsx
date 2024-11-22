@@ -1,5 +1,5 @@
 import { assets } from '../../assets/assets';
-import './NavHead.css';
+import './navhead.css';
 
 const NavHead = () => {
   return (

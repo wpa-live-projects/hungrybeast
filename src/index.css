@@ -19,7 +19,7 @@ body{
 }
 @media (max-width: 450px) {
     body{
-      background-image: url(newrepobg.jpg);
+      background-image: url(./assets/newrepobg.jpg);
       /* background-size: 100vw; */
       /* background-size: cover; */
       /* border: 2px solid white; */
