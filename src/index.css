@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *{
     padding: 0;
     margin: 0;
@@ -10,7 +11,7 @@
     font-family: inknut antiqua;
 }
 body{
-    background-image: url(newbg.jpg);
+    background-image: url(./assets/newbg.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,7 +19,7 @@ body{
 }
 @media (max-width: 450px) {
     body{
-      background-image: url(newrepobg.jpg);
+      background-image: url(./assets/newrepobg.jpg);
       /* background-size: 100vw; */
       /* background-size: cover; */
       /* border: 2px solid white; */
