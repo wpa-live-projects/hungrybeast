@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
-import './NavHead.css';
 import { assets } from '../../assets/assets';
+import './NavHead.css';
 
 const NavHead = () => {
   return (
