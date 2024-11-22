@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <div className="fixed bg-black bg-opacity-60 top-0 left-0 w-full z-50 h-15">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
-        <img src="./public/hglogo 1.png" alt="Hungry Beast" className="logo ml-0 mt-[-10px]" />
+        <img src="./assets/hglogo 1.png" alt="Hungry Beast" className="logo ml-0 mt-[-10px]" />
         <ul className="hidden md:flex gap-7">
           <a href="#home" className="text-[#FBC02D] hover:text-gray-400 pt-2">Home</a>
           <a href="#about" className="text-[#FBC02D] hover:text-gray-400 pt-2">About Us</a>
