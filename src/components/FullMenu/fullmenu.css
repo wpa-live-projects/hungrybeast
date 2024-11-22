@@ -1,0 +1,119 @@
+.menu-container{
+
+   /* background-image: url(../../assets/cm.jpg);
+
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    color: #FBC02D;
+  }
+  .full-menu,.full-button{
+    color: #FBC02D;
+  }
+  .backmenu{
+    /* box-flex-group: FBC02D; */
+    background-color: #FBC02D;
+  }
+  .full-nav { 
+    background-color: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px);
+    position: fixed;  /* Make the navbar fixed */
+    top: 0;  /* Align to the top of the page */
+    left: 0;  /* Align to the left edge */
+    width: 100%;  /* Full width of the screen */
+    z-index: 1000;  /* Ensure it stays on top of other content */
+    padding: 10px 20px;  /* Adjust padding if needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Optional: adds a slight shadow for visibility */
+  }
+  .menuItems{
+    font-size: 1.2rem;
+  }
+  .smenuItems {
+    font-size: 13px;
+    color: #FBC02D;
+    white-space: nowrap; /* Prevents wrapping of text */
+  }
+  
+  
+  
+  .menu-section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .full-menu{
+    margin-left: 40rem;
+  }
+  .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    max-width: 800px;
+  }
+  .fullmenu-button{
+    background-color: #FBC02D;
+
+  }
+  
+  .even-section {
+    flex-direction: row;
+  }
+  
+
+  .odd-section {
+    flex-direction: row-reverse;
+  }
+  
+  .section-image {
+    width: 45%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .menu-items {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .menu-container{
+      /* background-image: url('../../assets/cm.jpg'); */
+    }
+    .section-content {
+      flex-direction: column; 
+      align-items: center;
+      text-align: left;
+    }
+  
+    .section-image {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .menu-items {
+      width: 100%;
+      gap: 15px;
+    }
+  
+    .menu-item {
+      font-size: 18px; 
+    }
+    .full-menu{
+      margin-left: 2.5rem;
+    }
+    .smenuItems{
+      font-size: 13px;
+    }
+  }

@@ -1,0 +1,11 @@
+.menu-bg{
+    color: #FBC02D;
+}
+.menu-buttons{
+    background-color: #FBC02D;
+}
+@media (max-width: 480px) {
+    #menus{
+        padding-top: 20px;
+    }
+  }

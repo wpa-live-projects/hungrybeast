@@ -1,0 +1,21 @@
+#footer{
+    font-size: 10px;
+}
+.foot-logo{
+    width: 50px;
+    margin-left: 490px;
+}
+.opening{
+    margin-left: 20px;
+}
+
+    @media (max-width: 480px) {
+.foot-info{
+    padding-left: 35px;
+}
+.foot-logo{
+    width: 35px;
+    margin-left: -5px;
+}
+      
+}

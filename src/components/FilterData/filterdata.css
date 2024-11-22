@@ -1,0 +1,175 @@
+.rc{
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  gap: 20px;
+  }
+  .bicon{
+    height: 25px;
+    width: 15px;
+    /* margin-top: 10px; */
+    /* border-radius: 50%; */
+    /* border: 2px solid white; */
+  }
+  .data { 
+    background-color: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px);
+    position: fixed;  /* Make the navbar fixed */
+    top: 0;  /* Align to the top of the page */
+    left: 0;  /* Align to the left edge */
+    width: 100%;  /* Full width of the screen */
+    z-index: 1000;  /* Ensure it stays on top of other content */
+    padding: 10px 20px;  /* Adjust padding if needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Optional: adds a slight shadow for visibility */
+  }
+  .filterh{
+    color: #FBC02D;
+    /* background-color: #FBC02D; */
+    margin-left: 500px;
+  }
+  .ficon{
+    /* background-color: #FBC02D;  */
+    padding-top: 10px;
+    /* border: 2px solid white; */
+    /* padding: 0; */
+    margin-right: 430px;
+    background-color: #FBC02D;
+
+    /* padding-bottom: 40px; */
+  }
+  .filter{
+    /* display: flex; */
+    color: #FBC02D;
+    background-size: contain;
+   
+    margin-top: 100px;
+  }
+  .categoryname{
+    margin-right: 300px;
+  }
+  .filter-btn{
+    margin-top: -100px;
+  }
+  body{
+    background-color: #222; 
+  }
+
+  .filter-menu {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .filter-menu h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffc107; 
+    margin-bottom: 20px;
+  }
+
+  .filter-img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 70px;
+  }
+  .filter-img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    max-height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; 
+    display: block; 
+  }
+  
+  @media (max-width: 768px) {
+    .filter-img {
+      max-width: 200px;
+      max-height: 150px; 
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-img {
+      max-width: 150px; 
+      max-height: 120px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .item-card {
+    display: flex;
+    /* text-align: center; */
+    margin-left: 30px;
+  }
+  
+  .item-card p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .filter-btn{
+    text-align: center;
+    padding: 20px;
+
+  }
+  .item-card p:first-of-type {
+    font-weight: bold;
+  }
+  
+  .item-card p:last-of-type {
+    color: #ffc107; 
+  }
+  .filter-btn {
+    /* background-color: #ffc107; */
+  }
+ 
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .filter{
+        color: #FBC02D;
+    }
+    .rc{
+        display: inline;
+    }
+    .filter-lists {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .filter-img {
+      max-width: 60%;
+      margin-bottom: 20px;
+    }
+  
+    .filter-menu h2 {
+      font-size: 2rem;
+    }
+    .filterh{
+      color: #FBC02D;
+      margin-left: 40px;
+    }
+    .ficon{
+      /* background-color: #FBC02D; */
+      margin-right: 10px;
+    }
+    .categoryname{
+    margin-right: 10px;
+
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-menu h2 {
+      font-size: 1.8rem;
+    }
+  
+    .filter-img {
+      width: 80%;
+    }
+  }
+  

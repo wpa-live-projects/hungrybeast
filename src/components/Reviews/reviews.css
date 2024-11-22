@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background container for the whole Reviews section */
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFD700;
+    text-align: center;
+    padding: 50px;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Title and subtitle styles */
+.title {
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Reviews container with horizontal scrolling */
+.reviews-slider {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    /* padding: 0 50px; */
+    width: 100%;
+    max-width: 1000px; 
+    scroll-behavior: smooth;
+    margin-left: 0;
+}
+
+/* Individual review card styling */
+.review-card {
+    position: relative;
+    width: 300px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    scroll-snap-align: center;
+    border: 2px solid black;
+
+}
+/* .review-card:hover {
+    background: linear-gradient(#FF862F);
+    transform: translateY(-3px) scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+  } */
+  
+  /* .review-card:active {
+    transform: translateY(2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  } */
+.background-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.review-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.name, .rating, .review-text {
+    position: relative;
+    z-index: 1;
+}
+
+.name {
+    color: #00FF00;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 1em;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.reviews-slider {
+    justify-content: flex-start;
+    padding: 0 50px;
+}
+
+.reviews-slider::before,
+.reviews-slider::after {
+    content: "";
+    flex: 0 0 20px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+    }
+    .subtitle {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .review-card {
+        width: 110%;
+    }
+    .cp{
+        margin-left: 15px;
+    }
+    .np{
+        margin-right: -2px;
+    }
+    .review-card img {
+        width: 80px;
+        height: 80px;
+    }
+    .review-card:hover {
+        background: linear-gradient(#FF862F);
+        transform: translateY(-3px) scale(1.05); 
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+      }
+      
+      .review-card:active {
+        transform: translateY(2px); 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    .name {
+        font-size: 1.2em;
+    }
+
+    .rating, .review-text {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+
+    .reviews-slider {
+        gap: 10px;
+    }
+    .review-card:hover {
+        background: linear-gradient(#FF862F);
+        transform: translateY(-3px) scale(1.05); 
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+      }
+      
+      .review-card:active {
+        transform: translateY(2px); 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    .review-card {
+        /* padding: 20px; */
+     /* width: 200px; */
+     
+     width: 150px;
+     height: 200px;
+
+    }
+
+    .review-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .name {
+        font-size:15px;
+    }
+
+    .rating{
+        font-size: 0.8em;
+    }
+     .review-text {
+        font-size: 10px;
+        margin-top: -20px;
+    }
+}
+
+.reviews-slider::-webkit-scrollbar {
+    height: 8px; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+}
+
+.reviews-slider::-webkit-scrollbar-thumb {
+    background-color: #FFD700;
+    border-radius: 10px; 
+    border: 2px solid transparent; 
+    background-clip: content-box; 
+}
+
+.reviews-slider::-webkit-scrollbar-thumb:hover {
+    background-color: #FFA500; 
+}
+
+.reviews-slider {
+    scrollbar-width: thin; 
+    scrollbar-color: #FFD700 rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,25 @@
+
+.logo{
+    margin-bottom: -20px;
+    height: 70px;
+}
+/* Menu icon color customization */
+.menu-icon {
+    filter: invert(39%) sepia(76%) saturate(2161%) hue-rotate(7deg) brightness(101%) contrast(95%);
+  }
+  
+  .menu-icon:hover {
+    filter: invert(50%) sepia(80%) saturate(1800%) hue-rotate(10deg) brightness(110%) contrast(105%);
+  }
+/* Close icon color customization */
+.close-icon {
+    filter: invert(39%) sepia(76%) saturate(2161%) hue-rotate(7deg) brightness(101%) contrast(95%);
+  }
+  
+  .close-icon:hover {
+    filter: invert(50%) sepia(80%) saturate(1800%) hue-rotate(10deg) brightness(110%) contrast(105%);
+  }
+  .fullbut{
+    background-color: #FBC02D;
+  }
+

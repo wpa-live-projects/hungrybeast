@@ -1,0 +1,163 @@
+:root {
+  --text-color: #FBC02D;
+}
+
+.home
+  {
+   color: var(--text-color);
+    display: flex;
+  }
+  
+  .content {
+    text-align: left;
+   
+    display: flex;    
+  }
+  .homeimgs{
+    margin-top: 11rem;
+    margin-left: 7rem;
+    width: 550px;
+  }
+  .h1{
+    display: block;
+  }
+  .h1{
+    font-size: 48px;
+    color: var(--text-color);
+    margin-left: 150px;
+    width: 30rem;
+  }
+  .h2{
+    font-size: 24px;
+    color: var(--text-color);
+    margin-left: 210px;
+  }
+  h1, h2, p {
+    margin: 0.5rem 0;
+  }
+  .para{
+    color: var(--text-color);
+    margin-left: 250px;
+    font-size: 24px;
+  }
+  .para1{
+    margin-left: 250px;
+    color: aliceblue;
+  }
+  .explore-btn {
+    background-color:var(--text-color);
+    color: rgb(20, 18, 18); 
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    margin-left: 250px;
+  }
+  .explore-btn:hover {
+    background-color:  var(--text-color); 
+    transform: scale(1.05); 
+  }
+  
+  .header{
+    margin-top: 200px;
+    
+    margin-bottom: 40px;
+  }
+/* General Reset for Overflow */
+body, html {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-top: 10px;
+  }
+  .home {
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    text-align: center;
+    /* Make sure the content fits within the screen width */
+    overflow: hidden;
+  }
+
+  .content {
+    margin-top: 50px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeimgs {
+    margin-top: -1.7rem;
+    margin-left: -25px;
+    width: 400px; 
+    /* max-width: 500px;  */
+    /* height: auto; */
+  }
+
+  .h1 {
+    font-size: 36px;
+    /* margin-left: 0; */
+    margin-left: -100px;
+
+  }
+
+  .h2 {
+    font-size: 20px;
+    /* margin-left: 0; */
+    margin-left: -100px;
+
+  }
+
+  .para, .para1 {
+    font-size: 18px;
+    /* margin-left: 0; */
+    margin-left: -100px;
+
+  }
+
+  .explore-btn {
+    font-size: 14px;
+    margin-left: -100px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    /* padding: 15px; */
+    padding-left: 10px; 
+    padding-right: 10px; 
+  }
+
+  .h1 {
+    font-size: 28px;
+  }
+
+  .h2 {
+    font-size: 18px;
+  }
+
+  .para, .para1 {
+    font-size: 16px;
+    margin-top: -20px;
+    margin-bottom: -10px;
+  }
+
+  .explore-btn {
+    font-size: 12px;
+  }
+  .homeimgs {
+    margin-right: 18px;
+    /* max-width: 500px;  */
+    /* height: auto; */
+  }
+}
+
