@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Navhead.css';
+import './NavHead.css';
 import { assets } from '../../assets/assets';
 
 const NavHead = () => {
